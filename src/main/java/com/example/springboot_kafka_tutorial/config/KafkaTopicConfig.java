@@ -12,4 +12,10 @@ public class KafkaTopicConfig {
     public NewTopic newTopic(){
         return TopicBuilder.name("Sudeep").partitions(10).build();
     }
+
+    @Bean
+    public NewTopic JsonTopic(){
+        return TopicBuilder.name("Sudeep1").partitions(10).build();
+    }
+
 }
